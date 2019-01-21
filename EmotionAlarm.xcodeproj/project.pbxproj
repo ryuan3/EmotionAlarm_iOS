@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BB391171FA4A97DE39D8631 /* Pods_EmotionAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36156495F6D2B65A4523A997 /* Pods_EmotionAlarm.framework */; };
+		D005F6A1210D4856003E50EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F6A0210D4856003E50EF /* AppDelegate.m */; };
+		D005F6A7210D4856003E50EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D005F6A5210D4856003E50EF /* Main.storyboard */; };
+		D005F6A9210D4856003E50EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D005F6A8210D4856003E50EF /* Assets.xcassets */; };
+		D005F6AC210D4856003E50EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D005F6AA210D4856003E50EF /* LaunchScreen.storyboard */; };
+		D005F6AF210D4856003E50EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F6AE210D4856003E50EF /* main.m */; };
+		D005F6B8210D587B003E50EF /* EmotionDetectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F6B7210D587B003E50EF /* EmotionDetectorViewController.m */; };
+		D005F6BB210D655C003E50EF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F6BA210D655C003E50EF /* BaseViewController.m */; };
+		D06C5B0C210DE0740088E062 /* SetAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06C5B0B210DE0740088E062 /* SetAlarmViewController.m */; };
+		D06C5B0F210DFD4A0088E062 /* AlarmListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06C5B0E210DFD4A0088E062 /* AlarmListViewController.m */; };
+		D06C5B12210E02E20088E062 /* AlarmListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D06C5B11210E02E20088E062 /* AlarmListCell.m */; };
+		D0A1C52D210FAB220083ACA9 /* Music01.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0A1C527210FAB210083ACA9 /* Music01.caf */; };
+		D0A1C52E210FAB220083ACA9 /* Music02.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0A1C528210FAB220083ACA9 /* Music02.caf */; };
+		D0A1C52F210FAB220083ACA9 /* Music04.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0A1C529210FAB220083ACA9 /* Music04.caf */; };
+		D0A1C531210FAB220083ACA9 /* Music03.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0A1C52B210FAB220083ACA9 /* Music03.caf */; };
+		D0AE4AC621BE20C200E7DB22 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AE4AC521BE20C200E7DB22 /* NotificationService.m */; };
+		D0AE4ACA21BE20C200E7DB22 /* EmotionAlarmNotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0AE4AC221BE20C100E7DB22 /* EmotionAlarmNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0F63F94210E220300B1859E /* TimePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F63F93210E220300B1859E /* TimePickerCell.m */; };
+		D0F63F9A210EEB5B00B1859E /* HWWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F63F98210EEB5A00B1859E /* HWWaveView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0AE4AC821BE20C200E7DB22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D005F694210D4855003E50EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0AE4AC121BE20C100E7DB22;
+			remoteInfo = EmotionAlarmNotificationService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0AE4ACE21BE20C200E7DB22 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D0AE4ACA21BE20C200E7DB22 /* EmotionAlarmNotificationService.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		32F222D421D004BDA71BBDF4 /* Pods-EmotionAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmotionAlarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmotionAlarm/Pods-EmotionAlarm.debug.xcconfig"; sourceTree = "<group>"; };
+		36156495F6D2B65A4523A997 /* Pods_EmotionAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmotionAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57E4449DE6375EDC6AFBFC46 /* Pods-EmotionAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmotionAlarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmotionAlarm/Pods-EmotionAlarm.release.xcconfig"; sourceTree = "<group>"; };
+		D005F69C210D4856003E50EF /* EmotionAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D005F69F210D4856003E50EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D005F6A0210D4856003E50EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D005F6A6210D4856003E50EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D005F6A8210D4856003E50EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D005F6AB210D4856003E50EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D005F6AD210D4856003E50EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D005F6AE210D4856003E50EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D005F6B6210D587B003E50EF /* EmotionDetectorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmotionDetectorViewController.h; sourceTree = "<group>"; };
+		D005F6B7210D587B003E50EF /* EmotionDetectorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmotionDetectorViewController.m; sourceTree = "<group>"; };
+		D005F6B9210D655C003E50EF /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		D005F6BA210D655C003E50EF /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		D06C5B0A210DE0740088E062 /* SetAlarmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetAlarmViewController.h; sourceTree = "<group>"; };
+		D06C5B0B210DE0740088E062 /* SetAlarmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController.m; sourceTree = "<group>"; };
+		D06C5B0D210DFD4A0088E062 /* AlarmListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlarmListViewController.h; sourceTree = "<group>"; };
+		D06C5B0E210DFD4A0088E062 /* AlarmListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlarmListViewController.m; sourceTree = "<group>"; };
+		D06C5B10210E02E20088E062 /* AlarmListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlarmListCell.h; sourceTree = "<group>"; };
+		D06C5B11210E02E20088E062 /* AlarmListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlarmListCell.m; sourceTree = "<group>"; };
+		D0A1C527210FAB210083ACA9 /* Music01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Music01.caf; sourceTree = "<group>"; };
+		D0A1C528210FAB220083ACA9 /* Music02.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Music02.caf; sourceTree = "<group>"; };
+		D0A1C529210FAB220083ACA9 /* Music04.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Music04.caf; sourceTree = "<group>"; };
+		D0A1C52B210FAB220083ACA9 /* Music03.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Music03.caf; sourceTree = "<group>"; };
+		D0AE4AC221BE20C100E7DB22 /* EmotionAlarmNotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EmotionAlarmNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0AE4AC421BE20C200E7DB22 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		D0AE4AC521BE20C200E7DB22 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		D0AE4AC721BE20C200E7DB22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0AE4ACF21BEA18200E7DB22 /* EmotionAlarm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EmotionAlarm.entitlements; sourceTree = "<group>"; };
+		D0AE4AD021BEA18E00E7DB22 /* EmotionAlarmNotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EmotionAlarmNotificationService.entitlements; sourceTree = "<group>"; };
+		D0F63F92210E220300B1859E /* TimePickerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimePickerCell.h; sourceTree = "<group>"; };
+		D0F63F93210E220300B1859E /* TimePickerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimePickerCell.m; sourceTree = "<group>"; };
+		D0F63F98210EEB5A00B1859E /* HWWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWWaveView.m; sourceTree = "<group>"; };
+		D0F63F99210EEB5A00B1859E /* HWWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWWaveView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D005F699210D4855003E50EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB391171FA4A97DE39D8631 /* Pods_EmotionAlarm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0AE4ABF21BE20C100E7DB22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F08DF14EE7F5AA9939ABA4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32F222D421D004BDA71BBDF4 /* Pods-EmotionAlarm.debug.xcconfig */,
+				57E4449DE6375EDC6AFBFC46 /* Pods-EmotionAlarm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3E1CD562A1C5B45C87138C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36156495F6D2B65A4523A997 /* Pods_EmotionAlarm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D005F693210D4855003E50EF = {
+			isa = PBXGroup;
+			children = (
+				D005F69E210D4856003E50EF /* EmotionAlarm */,
+				D0AE4AC321BE20C200E7DB22 /* EmotionAlarmNotificationService */,
+				D005F69D210D4856003E50EF /* Products */,
+				1F08DF14EE7F5AA9939ABA4F /* Pods */,
+				B3E1CD562A1C5B45C87138C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D005F69D210D4856003E50EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D005F69C210D4856003E50EF /* EmotionAlarm.app */,
+				D0AE4AC221BE20C100E7DB22 /* EmotionAlarmNotificationService.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D005F69E210D4856003E50EF /* EmotionAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				D0AE4ACF21BEA18200E7DB22 /* EmotionAlarm.entitlements */,
+				D0A1C526210FAAFF0083ACA9 /* resource */,
+				D0F63F99210EEB5A00B1859E /* HWWaveView.h */,
+				D0F63F98210EEB5A00B1859E /* HWWaveView.m */,
+				D005F69F210D4856003E50EF /* AppDelegate.h */,
+				D005F6A0210D4856003E50EF /* AppDelegate.m */,
+				D005F6B6210D587B003E50EF /* EmotionDetectorViewController.h */,
+				D005F6B7210D587B003E50EF /* EmotionDetectorViewController.m */,
+				D005F6A5210D4856003E50EF /* Main.storyboard */,
+				D005F6A8210D4856003E50EF /* Assets.xcassets */,
+				D005F6AA210D4856003E50EF /* LaunchScreen.storyboard */,
+				D005F6AD210D4856003E50EF /* Info.plist */,
+				D005F6AE210D4856003E50EF /* main.m */,
+				D005F6B9210D655C003E50EF /* BaseViewController.h */,
+				D005F6BA210D655C003E50EF /* BaseViewController.m */,
+				D06C5B0A210DE0740088E062 /* SetAlarmViewController.h */,
+				D06C5B0B210DE0740088E062 /* SetAlarmViewController.m */,
+				D0F63F92210E220300B1859E /* TimePickerCell.h */,
+				D0F63F93210E220300B1859E /* TimePickerCell.m */,
+				D06C5B0D210DFD4A0088E062 /* AlarmListViewController.h */,
+				D06C5B0E210DFD4A0088E062 /* AlarmListViewController.m */,
+				D06C5B10210E02E20088E062 /* AlarmListCell.h */,
+				D06C5B11210E02E20088E062 /* AlarmListCell.m */,
+			);
+			path = EmotionAlarm;
+			sourceTree = "<group>";
+		};
+		D0A1C526210FAAFF0083ACA9 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				D0A1C527210FAB210083ACA9 /* Music01.caf */,
+				D0A1C528210FAB220083ACA9 /* Music02.caf */,
+				D0A1C52B210FAB220083ACA9 /* Music03.caf */,
+				D0A1C529210FAB220083ACA9 /* Music04.caf */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		D0AE4AC321BE20C200E7DB22 /* EmotionAlarmNotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				D0AE4AD021BEA18E00E7DB22 /* EmotionAlarmNotificationService.entitlements */,
+				D0AE4AC421BE20C200E7DB22 /* NotificationService.h */,
+				D0AE4AC521BE20C200E7DB22 /* NotificationService.m */,
+				D0AE4AC721BE20C200E7DB22 /* Info.plist */,
+			);
+			path = EmotionAlarmNotificationService;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D005F69B210D4855003E50EF /* EmotionAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D005F6B2210D4856003E50EF /* Build configuration list for PBXNativeTarget "EmotionAlarm" */;
+			buildPhases = (
+				6A0D8470C224A2E8D1EBFD01 /* [CP] Check Pods Manifest.lock */,
+				D005F698210D4855003E50EF /* Sources */,
+				D005F699210D4855003E50EF /* Frameworks */,
+				D005F69A210D4855003E50EF /* Resources */,
+				63D99CFF1999423FDCDF2017 /* [CP] Embed Pods Frameworks */,
+				28633F45187AB73546E6D57B /* [CP] Copy Pods Resources */,
+				D0AE4ACE21BE20C200E7DB22 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0AE4AC921BE20C200E7DB22 /* PBXTargetDependency */,
+			);
+			name = EmotionAlarm;
+			productName = EmotionAlarm;
+			productReference = D005F69C210D4856003E50EF /* EmotionAlarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0AE4AC121BE20C100E7DB22 /* EmotionAlarmNotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0AE4ACD21BE20C200E7DB22 /* Build configuration list for PBXNativeTarget "EmotionAlarmNotificationService" */;
+			buildPhases = (
+				D0AE4ABE21BE20C100E7DB22 /* Sources */,
+				D0AE4ABF21BE20C100E7DB22 /* Frameworks */,
+				D0AE4AC021BE20C100E7DB22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmotionAlarmNotificationService;
+			productName = EmotionAlarmNotificationService;
+			productReference = D0AE4AC221BE20C100E7DB22 /* EmotionAlarmNotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D005F694210D4855003E50EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = ruiling;
+				TargetAttributes = {
+					D005F69B210D4855003E50EF = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					D0AE4AC121BE20C100E7DB22 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D005F697210D4855003E50EF /* Build configuration list for PBXProject "EmotionAlarm" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D005F693210D4855003E50EF;
+			productRefGroup = D005F69D210D4856003E50EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D005F69B210D4855003E50EF /* EmotionAlarm */,
+				D0AE4AC121BE20C100E7DB22 /* EmotionAlarmNotificationService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D005F69A210D4855003E50EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A1C52E210FAB220083ACA9 /* Music02.caf in Resources */,
+				D005F6AC210D4856003E50EF /* LaunchScreen.storyboard in Resources */,
+				D005F6A9210D4856003E50EF /* Assets.xcassets in Resources */,
+				D0A1C531210FAB220083ACA9 /* Music03.caf in Resources */,
+				D0A1C52F210FAB220083ACA9 /* Music04.caf in Resources */,
+				D005F6A7210D4856003E50EF /* Main.storyboard in Resources */,
+				D0A1C52D210FAB220083ACA9 /* Music01.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0AE4AC021BE20C100E7DB22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28633F45187AB73546E6D57B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmotionAlarm/Pods-EmotionAlarm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63D99CFF1999423FDCDF2017 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EmotionAlarm/Pods-EmotionAlarm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSKinesis/AWSKinesis.framework",
+				"${PODS_ROOT}/AffdexSDK-iOS/ios/Affdex.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSKinesis.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Affdex.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmotionAlarm/Pods-EmotionAlarm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A0D8470C224A2E8D1EBFD01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmotionAlarm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D005F698210D4855003E50EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F63F94210E220300B1859E /* TimePickerCell.m in Sources */,
+				D005F6BB210D655C003E50EF /* BaseViewController.m in Sources */,
+				D005F6AF210D4856003E50EF /* main.m in Sources */,
+				D0F63F9A210EEB5B00B1859E /* HWWaveView.m in Sources */,
+				D06C5B0C210DE0740088E062 /* SetAlarmViewController.m in Sources */,
+				D06C5B0F210DFD4A0088E062 /* AlarmListViewController.m in Sources */,
+				D005F6B8210D587B003E50EF /* EmotionDetectorViewController.m in Sources */,
+				D005F6A1210D4856003E50EF /* AppDelegate.m in Sources */,
+				D06C5B12210E02E20088E062 /* AlarmListCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0AE4ABE21BE20C100E7DB22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0AE4AC621BE20C200E7DB22 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0AE4AC921BE20C200E7DB22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0AE4AC121BE20C100E7DB22 /* EmotionAlarmNotificationService */;
+			targetProxy = D0AE4AC821BE20C200E7DB22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D005F6A5210D4856003E50EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D005F6A6210D4856003E50EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D005F6AA210D4856003E50EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D005F6AB210D4856003E50EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D005F6B0210D4856003E50EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D005F6B1210D4856003E50EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D005F6B3210D4856003E50EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32F222D421D004BDA71BBDF4 /* Pods-EmotionAlarm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EmotionAlarm/EmotionAlarm.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBC5ML74YW;
+				INFOPLIST_FILE = EmotionAlarm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.ruiling.EmotionAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D005F6B4210D4856003E50EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E4449DE6375EDC6AFBFC46 /* Pods-EmotionAlarm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EmotionAlarm/EmotionAlarm.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBC5ML74YW;
+				INFOPLIST_FILE = EmotionAlarm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.ruiling.EmotionAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0AE4ACB21BE20C200E7DB22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = EmotionAlarmNotificationService/EmotionAlarmNotificationService.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBC5ML74YW;
+				INFOPLIST_FILE = EmotionAlarmNotificationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.ruiling.EmotionAlarm.EmotionAlarmNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0AE4ACC21BE20C200E7DB22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = EmotionAlarmNotificationService/EmotionAlarmNotificationService.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBC5ML74YW;
+				INFOPLIST_FILE = EmotionAlarmNotificationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.ruiling.EmotionAlarm.EmotionAlarmNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D005F697210D4855003E50EF /* Build configuration list for PBXProject "EmotionAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D005F6B0210D4856003E50EF /* Debug */,
+				D005F6B1210D4856003E50EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D005F6B2210D4856003E50EF /* Build configuration list for PBXNativeTarget "EmotionAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D005F6B3210D4856003E50EF /* Debug */,
+				D005F6B4210D4856003E50EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0AE4ACD21BE20C200E7DB22 /* Build configuration list for PBXNativeTarget "EmotionAlarmNotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0AE4ACB21BE20C200E7DB22 /* Debug */,
+				D0AE4ACC21BE20C200E7DB22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D005F694210D4855003E50EF /* Project object */;
+}
